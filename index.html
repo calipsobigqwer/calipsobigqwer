@@ -48,7 +48,7 @@
                     colors: {
                         bg: '#090A0F',          /* Самый темный фон страницы */
                         card: '#13151D',        /* Фон карточек */
-                        cardInner: '#1C1F2B',   /* Фон вложенных элементов (в аренде) */
+                        cardInner: '#1C1F2B',   /* Фон вложенных элементов */
                         border: '#232736',      /* Цвет границ */
                         accent: '#74EAC4',      /* Мятный акцентный цвет */
                         accentHover: '#5CDDB3',
@@ -106,7 +106,7 @@
                 </h1>
                 
                 <p class="text-textMuted text-base md:text-lg max-w-md leading-relaxed mb-10">
-                    Чистим диваны, матрасы, ковры, autoсиденья и мебель для питомцев. Оборудование можно взять в аренду для самостоятельной чистки.
+                    Чистим диваны, матрасы, ковры, автосиденья и мебель для питомцев. Оборудование можно взять в аренду для самостоятельной чистки.
                 </p>
                 
                 <div class="flex flex-wrap items-center gap-3 w-full sm:w-auto">
@@ -119,13 +119,83 @@
                 </div>
             </div>
 
-            <!-- Image Placeholder Card with soft gradient glow -->
-            <div class="bg-card border border-border rounded-[32px] min-h-[300px] lg:min-h-full flex flex-col items-center justify-center relative overflow-hidden group">
-                <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[80%] h-[80%] bg-accent/10 blur-[100px] rounded-full pointer-events-none"></div>
-                
-                <div class="relative z-10 text-center text-textMuted flex flex-col items-center gap-3 transition-transform duration-500 group-hover:scale-105">
-                    <i class="ph ph-magic-wand text-3xl opacity-50 text-accent animate-pulse"></i>
-                    <span class="text-sm font-medium">Фото работ можно добавить позже</span>
+            <!-- Interative Photo Carousel Card -->
+            <div class="bg-card border border-border rounded-[32px] min-h-[380px] lg:min-h-full h-full relative overflow-hidden group select-none flex flex-col justify-between">
+                <!-- Sliding Container -->
+                <div id="carousel-track" class="absolute inset-0 flex transition-transform duration-500 ease-out cursor-grab active:cursor-grabbing">
+                    <!-- Slide 1 -->
+                    <div class="w-full h-full shrink-0 relative">
+                        <img src="https://sun9-81.userapi.com/s/v1/ig2/I8ezPspw7t-gCgAA6rgDFta_1LDhI1ou4We2RxYxexfoMdz8xKc4iawunWG0ibmXzoACGBW6L7hJ-PyM9pnRO5hd.jpg?quality=95&as=32x18,48x27,72x40,108x60,160x89,240x134,360x201,480x268,540x301,640x357,720x402,1080x603,1280x714,1440x804,2560x1429&from=bu&cs=1280x0" class="absolute inset-0 w-full h-full object-cover pointer-events-none" alt="Результат чистки 1" onerror="this.src='https://placehold.co/800x600/13151D/74EAC4?text=Чистка+мебели'">
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="w-full h-full shrink-0 relative">
+                        <img src="https://sun9-15.userapi.com/s/v1/ig2/ospUxKk6jzwKdSFhLd40KSPZqRInMaly_N67L0dvPOOcn4WDDxclRPgknIWhFEhieI7fNqUFL5KH_87mMGlqNyzr.jpg?quality=95&as=32x18,48x27,72x40,108x60,160x89,240x134,360x201,480x268,540x301,640x357,720x402,1080x603,1280x714,1440x804,2560x1429&from=bu&cs=1280x0" class="absolute inset-0 w-full h-full object-cover pointer-events-none" alt="Результат чистки 2" onerror="this.src='https://placehold.co/800x600/13151D/74EAC4?text=Чистка+дивана'">
+                    </div>
+                    <!-- Slide 3 -->
+                    <div class="w-full h-full shrink-0 relative">
+                        <img src="https://sun9-78.userapi.com/s/v1/ig2/Io3NKWPrb2oWKrNu2D62hh3SXo9XbOahbgL7YWfAnVSGvGZSuHRGUtzr7e2QZaruOY1OhlWOVL2BD-FGcZiRYC2q.jpg?quality=95&as=32x32,48x48,72x72,108x108,160x160,240x240,360x360,480x480,540x540,640x640,720x720,1080x1080,1280x1280,1440x1440,2048x2048&from=bu&cs=1280x0" class="absolute inset-0 w-full h-full object-cover pointer-events-none" alt="Результат чистки 3" onerror="this.src='https://placehold.co/800x600/13151D/74EAC4?text=Химчистка+мебели'">
+                    </div>
+                    <!-- Slide 4 -->
+                    <div class="w-full h-full shrink-0 relative">
+                        <img src="https://sun9-54.userapi.com/s/v1/ig2/caiHaDOMMaFbSLvvt2q_5VS5pEaExWvBGfwQUuZ7kgp23lJDqL1vDOLhKgTg7pwCDqfSP8o2-wcisx2HcDDk4fcS.jpg?quality=95&as=32x18,48x27,72x40,108x60,160x89,240x134,360x201,480x268,540x301,640x357,720x402,1080x603,1280x714,1440x804,2560x1429&from=bu&cs=1280x0" class="absolute inset-0 w-full h-full object-cover pointer-events-none" alt="Результат чистки 4" onerror="this.src='https://placehold.co/800x600/13151D/74EAC4?text=Чистка+ковролина'">
+                    </div>
+                    <!-- Slide 5 -->
+                    <div class="w-full h-full shrink-0 relative">
+                        <img src="https://sun9-57.userapi.com/s/v1/ig2/05lS8KX3lH1C6tdJLAdmm9CJu0JlGipubEPu6Blrql6JpKuA8fNl0TH1CouGjl0L8w8mcHYhVjoO4Nc70Qo3he_b.jpg?quality=95&as=32x18,48x27,72x40,108x60,160x89,240x134,360x201,480x268,540x301,640x357,720x402,1080x603,1280x714,1440x804,2560x1429&from=bu&cs=1280x0" class="absolute inset-0 w-full h-full object-cover pointer-events-none" alt="Результат чистки 5" onerror="this.src='https://placehold.co/800x600/13151D/74EAC4?text=Чистка+матраса'">
+                    </div>
+                    <!-- Slide 6 -->
+                    <div class="w-full h-full shrink-0 relative">
+                        <img src="https://sun9-73.userapi.com/s/v1/ig2/rElpBX35yL80SoLtL68rntI4H6bYzeQKhXOoLVuNVZqNSd0ZG6KgWriRgWi2CYSlQW3z3jBb3C_tXqahcEVqHIL1.jpg?quality=95&as=32x18,48x27,72x40,108x60,160x89,240x134,360x201,480x268,540x301,640x357,720x402,1080x603,1280x714,1440x804,2560x1429&from=bu&cs=1280x0" class="absolute inset-0 w-full h-full object-cover pointer-events-none" alt="Результат чистки 6" onerror="this.src='https://placehold.co/800x600/13151D/74EAC4?text=Результат+работы'">
+                    </div>
+                    <!-- Slide 7 -->
+                    <div class="w-full h-full shrink-0 relative">
+                        <img src="https://sun9-80.userapi.com/s/v1/ig2/sxjA3sGwRLhtPL0pHx49Gu4Ykq9rAerxLBPKlY5BXD3ZcmrbVRpUvgJ5VD-3W23_5gSduFjdI7zLjQ-xDuh7sJvB.jpg?quality=95&as=32x18,48x27,72x40,108x60,160x89,240x134,360x201,480x268,540x301,640x357,720x402,1080x603,1280x714,1440x804,2560x1429&from=bu&cs=1280x0" class="absolute inset-0 w-full h-full object-cover pointer-events-none" alt="Результат чистки 7" onerror="this.src='https://placehold.co/800x600/13151D/74EAC4?text=Качественная+чистка'">
+                    </div>
+                    <!-- Slide 8 -->
+                    <div class="w-full h-full shrink-0 relative">
+                        <img src="https://sun9-16.userapi.com/s/v1/ig2/m0Hz-WLYLsbfWnTOuTXEgTFYq2XUUM_L_rZW-Jwg-aHacmL0748XVQJyqwaf8WT7NBpp5TmEFIVYZbXhyYhswkpv.jpg?quality=95&as=32x18,48x27,72x40,108x60,160x89,240x134,360x201,480x268,540x301,640x357,720x402,1080x603,1280x714,1440x804,2560x1429&from=bu&cs=1280x0" class="absolute inset-0 w-full h-full object-cover pointer-events-none" alt="Результат чистки 8" onerror="this.src='https://placehold.co/800x600/13151D/74EAC4?text=Чистка+автосалона'">
+                    </div>
+                    <!-- Slide 9 -->
+                    <div class="w-full h-full shrink-0 relative">
+                        <img src="https://sun9-85.userapi.com/s/v1/ig2/IEqp20ju8hBPlaUxXfficpo1IFQ-wFFl9MnERhcFvFJNFzAbnEV0DfBDW6m-35qCrrQbvARgrf5ktc0Q7GjpM-Pi.jpg?quality=95&as=32x18,48x27,72x40,108x60,160x89,240x134,360x201,480x268,540x301,640x357,720x402,1080x603,1280x714,1440x804,2560x1429&from=bu&cs=1280x0" class="absolute inset-0 w-full h-full object-cover pointer-events-none" alt="Результат чистки 9" onerror="this.src='https://placehold.co/800x600/13151D/74EAC4?text=Обновление+обивки'">
+                    </div>
+                    <!-- Slide 10 -->
+                    <div class="w-full h-full shrink-0 relative">
+                        <img src="https://sun9-41.userapi.com/s/v1/ig2/NYPSe0nZybPI-Kh1RkHlNOzNCBG8FokLljd0R8wUkqOOVPccZB68LnNGL3VvJzAsdoTRUEyA6BWn9uzV7NgLxhph.jpg?quality=95&as=32x18,48x27,72x40,108x60,160x89,240x134,360x201,480x268,540x301,640x357,720x402,1080x603,1280x714,1440x804,2560x1429&from=bu&cs=1280x0" class="absolute inset-0 w-full h-full object-cover pointer-events-none" alt="Результат чистки 10" onerror="this.src='https://placehold.co/800x600/13151D/74EAC4?text=Результат+до+после'">
+                    </div>
+                    <!-- Slide 11 -->
+                    <div class="w-full h-full shrink-0 relative">
+                        <img src="https://sun9-29.userapi.com/s/v1/ig2/XTXpFmtzg2L_YfSyJCzfxiRs5obavgXRZzOtAoYnkwHyn95u8DTpGqCtkY8bV67Jp18um4KvtRthO4eVP3Geix5Q.jpg?quality=95&as=32x18,48x27,72x40,108x60,160x89,240x134,360x201,480x268,540x301,640x357,720x402,1080x603,1280x714,1440x804,2560x1429&from=bu&cs=1280x0" class="absolute inset-0 w-full h-full object-cover pointer-events-none" alt="Результат чистки 11" onerror="this.src='https://placehold.co/800x600/13151D/74EAC4?text=Чистые+кресла'">
+                    </div>
+                    <!-- Slide 12 -->
+                    <div class="w-full h-full shrink-0 relative">
+                        <img src="https://sun9-70.userapi.com/s/v1/ig2/AOaTJC8wyGWsyf_zAjF3sYBommmwsY66mtBPHoSxPREf-mvn8bxsBQwPwuVWuAcrD9cs3vbQTh0IMrC-ZY_A8lLR.jpg?quality=95&as=32x18,48x27,72x40,108x60,160x89,240x134,360x201,480x268,540x301,640x357,720x402,1080x603,1280x714,1440x804,2560x1429&from=bu&cs=1280x0" class="absolute inset-0 w-full h-full object-cover pointer-events-none" alt="Результат чистки 12" onerror="this.src='https://placehold.co/800x600/13151D/74EAC4?text=Чистый+матрас'">
+                    </div>
+                    <!-- Slide 13 -->
+                    <div class="w-full h-full shrink-0 relative">
+                        <img src="https://sun9-82.userapi.com/s/v1/ig2/mOVHhH6TatRqIMl1PeI5bFLyD3PhNe82QlEOdhyIL7yVnUa6JxUYS2oEU9XBsemzgDKDPHVVjfhaGKlPcdSjc6Ek.jpg?quality=95&as=32x18,48x27,72x40,108x60,160x89,240x134,360x201,480x268,540x301,640x357,720x402,1080x603,1280x714,1440x804,2560x1429&from=bu&cs=1280x0" class="absolute inset-0 w-full h-full object-cover pointer-events-none" alt="Результат чистки 13" onerror="this.src='https://placehold.co/800x600/13151D/74EAC4?text=Чистый+офис'">
+                    </div>
+                </div>
+
+                <!-- Gradient Overlay for Navigation elements -->
+                <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-black/35 pointer-events-none"></div>
+
+                <!-- Floating Badge -->
+                <div class="absolute top-4 left-4 z-20 bg-black/55 backdrop-blur-sm px-3.5 py-1.5 rounded-full border border-white/10 text-[11px] font-semibold text-accent flex items-center gap-1.5">
+                    <i class="ph-fill ph-circle-wavy-check"></i> Примеры наших работ
+                </div>
+
+                <!-- Navigation Arrows -->
+                <button id="carousel-prev" class="absolute left-4 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-black/60 hover:bg-accent hover:text-bg text-white flex items-center justify-center transition-all opacity-0 group-hover:opacity-100 backdrop-blur-sm z-30">
+                    <i class="ph-bold ph-caret-left text-lg"></i>
+                </button>
+                <button id="carousel-next" class="absolute right-4 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-black/60 hover:bg-accent hover:text-bg text-white flex items-center justify-center transition-all opacity-0 group-hover:opacity-100 backdrop-blur-sm z-30">
+                    <i class="ph-bold ph-caret-right text-lg"></i>
+                </button>
+
+                <!-- Dot Indicators (Dynamically Synced in JS) -->
+                <div class="absolute bottom-6 left-1/2 -translate-x-1/2 flex items-center gap-2 z-30 bg-black/40 backdrop-blur-md py-1.5 px-3 rounded-full border border-white/5 max-w-[85%] overflow-x-auto no-scrollbar">
+                    <div id="carousel-dots" class="flex gap-2"></div>
                 </div>
             </div>
         </section>
@@ -214,7 +284,6 @@
                 <div class="bg-card border border-border rounded-3xl p-6 hover:border-border/80 transition-colors">
                     <div class="flex items-center gap-3 mb-6">
                         <div class="w-10 h-10 rounded-full bg-accent/10 flex items-center justify-center text-accent">
-                            <!-- Исправлен класс ph-paw на ph-paw-print для корректного отображения иконки -->
                             <i class="ph-fill ph-paw-print text-xl"></i>
                         </div>
                         <h3 class="text-lg font-bold text-white">Для питомцев</h3>
@@ -297,7 +366,7 @@
                             <h4 class="font-bold text-white text-sm md:text-base mb-1">Моющий пылесос Karcher Puzzi 8/1</h4>
                             <p class="text-textMuted text-xs mb-4 leading-relaxed">Для глубокой влажной чистки диванов, ковров, матрасов и сидений автомобиля.</p>
                         </div>
-                        <p class="text-accent font-semibold text-sm">1 800 ₽ за 6 часов / 1 100 ₽ за сутки</p>
+                        <p class="text-accent font-semibold text-sm">800 ₽ за 6 часов / 1 100 ₽ за сутки</p>
                     </div>
 
                     <div class="bg-cardInner border border-white/5 rounded-2xl p-5 hover:border-white/10 transition-colors flex flex-col justify-between">
@@ -455,6 +524,179 @@
     </div>
 
     <script>
+        /* Interactive Gallery / Carousel Logic */
+        const track = document.getElementById('carousel-track');
+        const slides = Array.from(track.children);
+        const nextButton = document.getElementById('carousel-next');
+        const prevButton = document.getElementById('carousel-prev');
+        const dotsContainer = document.getElementById('carousel-dots');
+        
+        let currentIndex = 0;
+        let startX = 0;
+        let currentTranslate = 0;
+        let prevTranslate = 0;
+        let isDragging = false;
+        let autoplayTimer = null;
+        const totalSlides = slides.length;
+
+        // Generate dots dynamically based on actual images list size
+        function createDots() {
+            dotsContainer.innerHTML = '';
+            slides.forEach((_, index) => {
+                const dot = document.createElement('button');
+                dot.className = `w-2 h-2 rounded-full transition-all duration-300 shrink-0 ${index === 0 ? 'bg-accent w-4' : 'bg-white/30 hover:bg-white/60'}`;
+                dot.setAttribute('aria-label', `Перейти к слайду ${index + 1}`);
+                dot.addEventListener('click', () => {
+                    goToSlide(index);
+                    resetAutoplay();
+                });
+                dotsContainer.appendChild(dot);
+            });
+        }
+
+        // Update dots visual state
+        function updateDots() {
+            const dots = Array.from(dotsContainer.children);
+            dots.forEach((dot, index) => {
+                if (index === currentIndex) {
+                    dot.classList.add('bg-accent', 'w-4');
+                    dot.classList.remove('bg-white/30');
+                } else {
+                    dot.classList.remove('bg-accent', 'w-4');
+                    dot.classList.add('bg-white/30');
+                }
+            });
+        }
+
+        // Move track to specific slide
+        function goToSlide(index) {
+            if (index < 0) {
+                currentIndex = totalSlides - 1;
+            } else if (index >= totalSlides) {
+                currentIndex = 0;
+            } else {
+                currentIndex = index;
+            }
+            track.style.transform = `translateX(-${currentIndex * 100}%)`;
+            updateDots();
+        }
+
+        // Next & Prev handlers
+        nextButton.addEventListener('click', () => {
+            goToSlide(currentIndex + 1);
+            resetAutoplay();
+        });
+
+        prevButton.addEventListener('click', () => {
+            goToSlide(currentIndex - 1);
+            resetAutoplay();
+        });
+
+        // Swipe & Mouse Drag Gestures
+        track.addEventListener('touchstart', touchStart);
+        track.addEventListener('touchend', touchEnd);
+        track.addEventListener('touchmove', touchMove);
+
+        track.addEventListener('mousedown', dragStart);
+        track.addEventListener('mouseup', dragEnd);
+        track.addEventListener('mouseleave', dragEnd);
+        track.addEventListener('mousemove', dragMove);
+
+        function dragStart(e) {
+            isDragging = true;
+            startX = e.clientX;
+            track.style.transition = 'none';
+            pauseAutoplay();
+        }
+
+        function dragMove(e) {
+            if (!isDragging) return;
+            const currentX = e.clientX;
+            const diff = currentX - startX;
+            const currentPercentage = (diff / track.offsetWidth) * 100;
+            const translate = -(currentIndex * 100) + currentPercentage;
+            track.style.transform = `translateX(${translate}%)`;
+        }
+
+        function dragEnd(e) {
+            if (!isDragging) return;
+            isDragging = false;
+            track.style.transition = 'transform 0.5s ease-out';
+            const diff = e.clientX - startX;
+            if (Math.abs(diff) > 50) {
+                if (diff > 0) {
+                    goToSlide(currentIndex - 1);
+                } else {
+                    goToSlide(currentIndex + 1);
+                }
+            } else {
+                goToSlide(currentIndex);
+            }
+            startAutoplay();
+        }
+
+        function touchStart(e) {
+            startX = e.touches[0].clientX;
+            isDragging = true;
+            track.style.transition = 'none';
+            pauseAutoplay();
+        }
+
+        function touchMove(e) {
+            if (!isDragging) return;
+            const currentX = e.touches[0].clientX;
+            const diff = currentX - startX;
+            const currentPercentage = (diff / track.offsetWidth) * 100;
+            const translate = -(currentIndex * 100) + currentPercentage;
+            track.style.transform = `translateX(${translate}%)`;
+        }
+
+        function touchEnd(e) {
+            if (!isDragging) return;
+            isDragging = false;
+            track.style.transition = 'transform 0.5s ease-out';
+            const endX = e.changedTouches[0].clientX;
+            const diff = endX - startX;
+            if (Math.abs(diff) > 40) {
+                if (diff > 0) {
+                    goToSlide(currentIndex - 1);
+                } else {
+                    goToSlide(currentIndex + 1);
+                }
+            } else {
+                goToSlide(currentIndex);
+            }
+            startAutoplay();
+        }
+
+        // Autoplay Loop Management
+        function startAutoplay() {
+            if (autoplayTimer) clearInterval(autoplayTimer);
+            autoplayTimer = setInterval(() => {
+                goToSlide(currentIndex + 1);
+            }, 4000);
+        }
+
+        function pauseAutoplay() {
+            if (autoplayTimer) clearInterval(autoplayTimer);
+        }
+
+        function resetAutoplay() {
+            pauseAutoplay();
+            startAutoplay();
+        }
+
+        // Pause playing on hover
+        const carouselContainer = track.parentElement;
+        carouselContainer.addEventListener('mouseenter', pauseAutoplay);
+        carouselContainer.addEventListener('mouseleave', startAutoplay);
+
+        // Initialize Carousel
+        createDots();
+        startAutoplay();
+
+
+        /* Contact Modal Controllers */
         const contactModal = document.getElementById('contact-modal');
         const contactModalContent = document.getElementById('contact-modal-content');
 
@@ -462,7 +704,6 @@
             contactModal.classList.remove('opacity-0', 'pointer-events-none');
             contactModalContent.classList.remove('scale-95');
             contactModalContent.classList.add('scale-100');
-            // Блокируем прокрутку страницы при открытом модальном окне
             document.body.style.overflow = 'hidden'; 
         }
 
@@ -470,11 +711,11 @@
             contactModal.classList.add('opacity-0', 'pointer-events-none');
             contactModalContent.classList.remove('scale-100');
             contactModalContent.classList.add('scale-95');
-            // Восстанавливаем прокрутку
             document.body.style.overflow = ''; 
         }
 
-        // Legal Modal Logic
+
+        /* Legal Modals Information and Setup */
         const legalModal = document.getElementById('legal-modal');
         const legalModalContent = document.getElementById('legal-modal-content');
         const legalTitle = document.getElementById('legal-title');
@@ -487,8 +728,8 @@
                     <div class="space-y-4">
                         <p class="font-semibold text-white">Выездные клининговые услуги и аренда профессиональной техники:</p>
                         <ul class="space-y-2 mt-2">
-                            <li><strong>Исполнитель:</strong> Самозанятый Смирнов Алексей Дмитриевич</li>
-                            <li><strong>ИНН:</strong> 434589211044</li>
+                            <li><strong>Исполнитель:</strong> Самозанятый Пальшин Алексей Александрович</li>
+                            <li><strong>ИНН:</strong> 430500662098</li>
                             <li><strong>Регион обслуживания:</strong> г. Киров и Кировская область (пригород)</li>
                             <li><strong>Специализация:</strong> Выездная глубокая аквачистка текстильных поверхностей (диваны, матрасы, ковровые покрытия, салоны автомобилей), удаление сложных пятен и неприятных запахов, а также предоставление оригинальной техники Karcher в аренду на посуточной основе.</li>
                         </ul>
@@ -534,7 +775,7 @@
             document.body.style.overflow = '';
         }
 
-        // Закрытие модального окна по клавише ESC
+        // Global keydown triggers
         document.addEventListener('keydown', (e) => {
             if (e.key === 'Escape') {
                 if (!contactModal.classList.contains('opacity-0')) {
